@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <div class="logo">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/sun--v1.png" alt="Weather Icon"
+                    class="logo-icon" />
+                WeatherNow
+            </div>
+            <div class="hamburger" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu">
+                <div class="menu-item"><a href="#search">Home</a></div>
+                <div class="menu-item"><a href="#">Current</a></div>
+                <div class="menu-item"><a href="#">Hourly</a></div>
+                <div class="menu-item"><a href="#">Daily</a></div>
+            </div>
+        </nav>
+        <div class="body-content" id="search">
+            <input type="text" id="search-city" placeholder="Enter City..." autocomplete="off" />
+            <button id="search-btn">Search</button>
+            <div id="history-dropdown" class="dropdown"></div>
+        </div>
+    </header>
+
+    <section class="weather-sections" id="weather-cards"></section>
+    <!-- <section class="weather-sections" id = "weather-cards">
+        <div id="current" class="weather-section">
+            <h2>Current Weather</h2>
+            <div class="section-content"></div>
+        </div>
+
+        <div id="weekly" class="weather-section">
+            <h2>Weekly Forecast</h2>
+            <div class="section-content"></div>
+        </div>
+
+        <div id="fifteen-days" class="weather-section">
+            <h2>15-Day Outlook</h2>
+            <div class="section-content"></div>
+        </div>
+    </section> -->
+    <Footer>
+
+    </Footer>
+    <div class="toggle-switch" onclick="this.classList.toggle('active')"></div>
+</body>
+<script src="script.js"></script>
+
+</html>
